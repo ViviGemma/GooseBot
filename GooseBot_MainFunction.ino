@@ -394,71 +394,46 @@ void setup() {
 }
 //***MAIN LOOP***//
 void loop(){  
-  LineFollow();
-  // MoveForward(5);
-  // DynamicBrake();
-  // // BlockCollectionRoutine();
-  // BlockDelivery();  
-  // delay(50);
-  // Turn90DegPointCCW();
-  // delay(50);
-  // while(digitalRead(LiDAR1Pin)){
-  //   SpinWHeels(75,75,75,75);
-  // }
-  // DynamicBrake();
-  // delay(50);
-  // Turn90DegPointCCW();
-  // delay(50);
-  // Wheel1Enc.write(0);
-  // double wheel1Pos = 0;
-  // // MoveForward(600);
-  // while(wheel1Pos<8000){
-  //   wheel1Pos = Wheel1Enc.read();
-  //   LineFollow();
-  // }
-  // DynamicBrake();
-  // servo.write(180);
-  // SpinWheels(-50,-50,-50,-50);
-  // delay(200);
-  // DynamicBrake();
-  // MoveForward(500);
-  // DynamicBrake();
-  // while (digitalRead(LiDAR1Pin)){
-  //   LineFollow();
-  // }
-  // DynamicBrake();
-  // Turn90DegPointCW();
-  // MoveForward(100);
-  // DynamicBrake();
-  // SpinWheels(-50,-50,-50,-50);
-  // delay(200);
-  // DynamicBrake();
-  // while(1){
-  //   PlayWarChant();
-  // }
-//  mainState = 1;
-//  switch (mainState){
-//    case 0: // Initialization
-//      int startFlag = 1;
-//      if (startFlag)
-//        mainState = 1;
-//      else
-//        mainState = 0; 
-//      break;
-//    case 1: // Block Collection
-//      BlockCollectionRoutine();
-//     break;
-//    case 2: // Block Delivery
-//      break;
-//    case 3: // Thruster Collection and Delivery
-//      break;
-//    case 4: // Deploy Ramp
-//      break;
-//    case 5: // Cross Crater
-//      break;
-//    case 6: // Press Button
-//      break;
-//    case 7: // Celebration
-//      break;
-// }
+  MoveForward(5);
+  DynamicBrake();
+  // BlockCollectionRoutine();
+  BlockDelivery();  
+  delay(50);
+  Turn90DegPointCCW();
+  delay(50);
+  while(digitalRead(LiDAR1Pin)){
+    SpinWHeels(75,75,75,75);
+  }
+  DynamicBrake();
+  delay(50);
+  Turn90DegPointCCW();
+  delay(50);
+  Wheel1Enc.write(0);
+  double wheel1Pos = 0;
+  // MoveForward(600);
+  while(wheel1Pos<8000){
+    wheel1Pos = Wheel1Enc.read();
+    LineFollow();
+  }
+  DynamicBrake();
+  servo.write(180);
+  SpinWheels(-50,-50,-50,-50);
+  delay(200);
+  DynamicBrake();
+  MoveForward(500);
+  DynamicBrake();
+  while (digitalRead(LiDAR1Pin)){
+    LineFollow();
+  }
+  DynamicBrake();
+  Turn90DegPointCW();
+  MoveForward(100);
+  DynamicBrake();
+  SpinWheels(-50,-50,-50,-50);
+  delay(200);
+  DynamicBrake();
+  while(1){
+    PlayWarChant();
+  }
+
 }
